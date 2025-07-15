@@ -1,0 +1,7 @@
+{
+  "student_id": "student1",
+  "question_id": "Q1",
+  "score": 3,
+  "max_score": 4,
+  "feedback": "✔ 包含 'process' (來自 'process' 項目) / ✔ 包含 'plants' (來自 'plants' 項目) / ✔ 包含 'sunlight' (來自 'light_energy' 項目) / ✘ 缺少關鍵字於 'chemical_energy' 項目 (需包含任一: chemical energy, glucose, sugar)"
+}

@@ -1,0 +1,23 @@
+{
+  "question_id": "Q1",
+  "question": "What is photosynthesis?",
+  "reference_answer": "Photosynthesis is the process by which plants convert light energy into chemical energy.",
+  "rubric": {
+    "process": {
+      "keywords": ["process"],
+      "points": 1
+    },
+    "plants": {
+      "keywords": ["plants", "organisms", "vegetation"],
+      "points": 1
+    },
+    "light_energy": {
+      "keywords": ["light energy", "sunlight", "solar energy"],
+      "points": 1
+    },
+    "chemical_energy": {
+      "keywords": ["chemical energy", "glucose", "sugar"],
+      "points": 1
+    }
+  }
+}
