@@ -6,7 +6,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def gpt_score(question, reference_answer, rubric, student_answer):
     prompt = f"""
-你是一位高中老師，請根據下列題目與評分標準，評分學生答案並提供簡要回饋。
+你是一位老師，請根據下列題目與評分標準，評分學生答案並提供簡要回饋。
 
 題目：{question}
 
@@ -22,12 +22,12 @@ def gpt_score(question, reference_answer, rubric, student_answer):
 {{
   "score": <得分>,
   "max_score": <總分>,
-  "feedback": "<給學生的簡要評語>"
+  "feedback": "<簡要評語>"
 }}
     """
 
     response = openai.ChatCompletion.create(
-        model="gpt-4o",  # 或 gpt-3.5-turbo 以節省成本
+        model="gpt-3.5-turbo",  # 或 gpt-3.5-turbo 以節省成本 # 或 gpt-4o
         messages=[{"role": "user", "content": prompt}],
         temperature=0.3
     )
