@@ -1,8 +1,10 @@
-import openai
+from openai import OpenAI
 import json
 import os
+from dotenv import load_dotenv
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def gpt_score(question, reference_answer, rubric, student_answer):
     prompt = f"""
@@ -26,11 +28,11 @@ def gpt_score(question, reference_answer, rubric, student_answer):
 }}
     """
 
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model="gpt-3.5-turbo",  # 或 gpt-3.5-turbo 以節省成本 # 或 gpt-4o
         messages=[{"role": "user", "content": prompt}],
         temperature=0.3
     )
 
-    reply = response["choices"][0]["message"]["content"]
+    reply = response.choices[0].message.content
     return json.loads(reply)

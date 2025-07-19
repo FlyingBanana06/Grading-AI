@@ -9,3 +9,5 @@ https://chatgpt.com/share/6873cdf9-9d34-8005-abda-c93cacffacc5
 3. 自動閱卷系統開發
 https://chatgpt.com/share/68764a10-1d9c-8000-a435-c0d1b0405d0b
 
+4. OpenAI API 升級錯誤
+https://chatgpt.com/share/6877699c-01b8-8003-9b68-88fa89fa6471
